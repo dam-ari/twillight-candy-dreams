@@ -4,15 +4,20 @@ import { RouterModule } from '@angular/router';
 import { SettingsComponent } from './settings/settings.component';
 import { ThemeService } from './theme.service';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home/home.component';
+import { SkyComponent } from './sky/sky.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    // BrowserAnimationsModule, 
+    // BrowserAnimationsModule,
     RouterModule,
     CommonModule,
-    SettingsComponent],
+    SettingsComponent,
+    HomeComponent,
+    SkyComponent
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [ThemeService]
